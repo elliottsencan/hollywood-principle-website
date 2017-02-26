@@ -1,0 +1,44 @@
+/* Primary Color */
+$prCol                        : #ee6b14;
+$prColDark                    : darken($prCol, 8.4%);
+$scCol                        : #2c2c2c;
+$thCol                        : #a8a8a8;
+
+$frCol                        : #3c3c3c;
+$fvCol                        : #1a1a1a;
+
+/* Button Color */
+$prBtCol                      : #ee6b14;
+$scBtCol                      : #424242;
+$thBtCol                      : #5a5a5a;
+$frBtCol                      : #3c3c3c;
+$fvBtCol                      : #1a1a1a;
+
+/* Background Color */
+$bgPgCol                      : #f5f9fc;
+$bgScCol                      : #16191b;
+$bgTrCol                      : #000000;
+$bgFtCol                      : #16191b;
+
+/* Footer */
+$txFtCol                      : #6e6e6e;
+$txFtColHo                    : #a8a8a8;
+
+$lgScreenSizeMax              : 1200px;
+$smScreenSizeMax              : 992px;
+$xsScreenSizeMax              : 768px;
+
+
+@mixin easy-transition($params) {
+  -webkit-transition: $params;
+  -moz-transition: $params;
+  -o-transition: $params;
+  transition: $params;
+}
+
+@mixin easy-animation($params2) {
+  -webkit-animation: $params2;
+  -moz-animation: $params2;
+  -o-animation: $params2;
+  animation: $params2;
+}

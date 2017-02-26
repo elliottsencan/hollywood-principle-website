@@ -1,0 +1,107 @@
+<!-- =============== START ALBUMS ================ -->
+<div class="albums albums-03 padding-top-100 padding-bottom-140">
+  <div class="container">
+    <div class="title-separator txt-white sppb-wow fadeInUp sppb-animated">
+      <div class="separator">
+        <svg version="1.1"
+             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49px" height="13px" viewBox="0 0 49 13" style="enable-background:new 0 0 49 13;" xml:space="preserve">
+            <style type="text/css"> .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#EBEBEB;} </style>
+          <defs>
+          </defs>
+          <g id="XMLID_27_">
+            <g id="XMLID_30_">
+              <path id="XMLID_31_" class="st0" d="M17.5,6.5V0L15,0v6.5c0,1.8,0.6,3.3,1.8,4.6c1.2,1.3,2.7,1.9,4.5,1.9v-2.6
+              c-1,0-1.9-0.5-2.6-1.3C18.1,8.4,17.5,7.5,17.5,6.5z M27.7,0v2.6c1,0,1.9,0.5,2.6,1.3c0.7,0.7,1.2,1.6,1.2,2.6V13l2.5,0V6.5
+              c0-1.8-0.6-3.3-1.8-4.6C30.9,0.6,29.4,0,27.7,0z M23.2,13h2.5V0h-2.5V13z M36,5v3h13V5H36z M0,8h13V5H0V8z"/>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <h3 class="title">discography.</h3>
+    </div>
+
+    <div class="row">
+      {% for album in site.data.albums %}
+      <div class="col-sm-3 col-md-2">
+        <div class="item-album-case">
+          <div class="ct-img">
+            <a href="{{ album.spotify_url }}">
+              <img src="{{ album.image_url_medium }}" alt="Albums 1">
+            </a>
+          </div>
+          <div class="ct-text">
+            <a href="#" class="name">{{ album.name }}</a>
+            <p class="author">{{ album.spotify_uri }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+      <!-- <div class="col-sm-3 col-md-2">
+        <div class="item-album-case">
+          <div class="ct-img">
+            <a href="albums-details.php">
+              <img src="assets/images/albums/albums-image-2.jpg" alt="Albums 2">
+            </a>
+          </div>
+          <div class="ct-text">
+            <a href="#" class="name">All We Know</a>
+            <p class="author">The Chainsmokers Phoebe Ryan</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-2">
+        <div class="item-album-case">
+          <div class="ct-img">
+            <a href="albums-details.php">
+              <img src="assets/images/albums/albums-image-3.jpg" alt="Albums 3">
+            </a>
+          </div>
+          <div class="ct-text">
+            <a href="#" class="name">Side To Side</a>
+            <p class="author">Ariana Grande Nicki Minaj</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-2">
+        <div class="item-album-case">
+          <div class="ct-img">
+            <a href="albums-details.php">
+              <img src="assets/images/albums/albums-image-4.jpg" alt="Albums 4">
+            </a>
+          </div>
+          <div class="ct-text">
+            <a href="#" class="name">Closer</a>
+            <p class="author">The Chainsmokers Halsey</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-2">
+        <div class="item-album-case">
+          <div class="ct-img">
+            <a href="albums-details.php">
+              <img src="assets/images/albums/albums-image-5.jpg" alt="Albums 5">
+            </a>
+          </div>
+          <div class="ct-text">
+            <a class="name">Cold Water</a>
+            <p class="author">Major Lazer Justin Bieber</p>
+          </div>
+        </div>
+      </div> -->
+      <!-- <div class="col-sm-3 col-md-2">
+        <div class="item-album-case">
+          <div class="ct-img">
+            <a href="albums-details.php">
+              <img src="assets/images/albums/albums-image-6.jpg" alt="Albums 6">
+            </a>
+          </div>
+          <div class="ct-text">
+            <a href="#" class="name">Don't Wanna Know</a>
+            <p class="author">Maroon 5 Kendrick Lamar</p>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div>
+<!-- =============== END ALBUMS ================ -->

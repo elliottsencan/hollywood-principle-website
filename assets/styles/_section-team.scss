@@ -1,0 +1,22 @@
+.section-team {
+  .item {
+    margin-bottom: 60px;
+    .ct-image {
+      margin-bottom: 37px;
+    }
+    .ct-text {
+      .name {
+        margin: 0 0 27px 0;
+        text-align: center;
+        span {
+          font-size: 15px;
+        }
+      }
+
+      p {
+        margin: 0;
+        font-size: 1.08em;
+      }
+    }
+  }
+}

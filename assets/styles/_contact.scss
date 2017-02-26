@@ -1,0 +1,46 @@
+.contact-section {
+  .title-section {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 35px 0;
+  }
+  .content {
+    .form-group-btn {
+      text-align: center;
+    }
+    .min-list {
+      position: relative;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &:after,
+      &:before {
+        content: " ";
+        display: table;
+      }
+      &:after {
+        clear: both;
+      }
+      > b {
+        top: 0;
+        left: 0;
+        position: absolute;
+      }
+      b {
+        color: $scCol;
+        font-weight: 500;
+      }
+      i {
+        width: 100%;
+        float: right;
+        text-align: left;
+        padding-left: 40%;
+        font-style: normal;
+        span {
+          color: #6e6e6e;
+          display: block;
+        }
+      }
+    }
+  }
+}
