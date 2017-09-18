@@ -1,38 +1,127 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Hollywood Principle</title>
-  <link rel="icon" href="assets/images/logo/icon.png">
-  {% include styles.html %}
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/css/stylesheet.css" rel="stylesheet" type="text/css" media="all" />
 </head>
-<body class="home content-black">
-  {% include loading.html %}
+<body>
+  <div class="site-bar site-bar-left"></div>
+  <div class="site-bar site-bar-right"></div>
 
-  {% include header.html %}
+  <div class="site-bar site-bar-top">
+    <div class="nav-module logo-module text-center">
+      <a id="main-logo" href="/">Hollywood Principle</a>
+    </div>
+  </div>
 
-  {% include menu.html %}
+  <nav class="nav--fixed nav-bar-bottom site-bar site-bar-bottom">
+    <div class="nav-bar visible-xs visible-sm">
+      <div class="nav-module menu-module left">
+        <ul class="menu">
+          <li>
+            <a href="#signup">Signup</a>
+          </li>
+          <li>
+            <a href="https://hollywood-principle.myshopify.com/">Store</a>
+          </li>
+          <li>
+            <a href="https://open.spotify.com/artist/6ldZGvFDjs6KafLouTBHJ9">
+                                    <i class="socicon-spotify"></i> Spotify
+                                </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/hollywoodprinciple/">
+                                    <i class="socicon-facebook"></i> Facebook
+                                </a>
+          </li>
+          <li>
+            <a href="https://itunes.apple.com/us/artist/hollywood-principle/id949969985">
+                                    <i class="socicon-itunes"></i> iTunes
+                                </a>
+          </li>
+          <li>
+            <a href="https://soundcloud.com/hollywood_principle">
+                                    <i class="socicon-soundcloud"></i> Soundcloud
+                                </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UC1tLItnjulEC6hyeAnc-D5Q/videos?view_as=subscriber">
+                                    <i class="socicon-youtube"></i> Youtube
+                                </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/hollywoodprinciple/?hl=en">
+                                    <i class="socicon-instagram"></i> Instagram
+                                </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="nav-bar hidden-xs hidden-sm">
+      <div class="nav-module menu-module left">
+        <ul class="menu">
+          <li>
+            <a href="#signup">Signup</a>
+          </li>
+          <li>
+            <a href="https://hollywood-principle.myshopify.com/" target="_blank">Store</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-module menu-module right">
+        <ul class="menu">
+          <li>
+            <a href="https://open.spotify.com/artist/6ldZGvFDjs6KafLouTBHJ9">
+                                    <i class="socicon-spotify"></i>
+                                </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/hollywoodprinciple/">
+                                    <i class="socicon-facebook"></i>
+                                </a>
+          </li>
+          <li>
+            <a href="https://itunes.apple.com/us/artist/hollywood-principle/id949969985">
+                                    <i class="socicon-itunes"></i>
+                                </a>
+          </li>
+          <li>
+            <a href="https://soundcloud.com/hollywood_principle">
+                                    <i class="socicon-soundcloud"></i>
+                                </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UC1tLItnjulEC6hyeAnc-D5Q/videos?view_as=subscriber">
+                                    <i class="socicon-youtube"></i>
+                                </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/hollywoodprinciple/?hl=en">
+                                    <i class="socicon-instagram"></i>
+                                </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="nav-mobile-toggle visible-sm visible-xs">
+      <i class="icon-Align-JustifyAll icon icon--sm"></i>
+    </div>
+  </nav>
+  </div>
 
-  {% include albums1.html %}
+  <div class="main-container">
+    
+    {% include main.html %}
+    
+    {% include signup.html %}
+    
+  </div>
 
-  {% include store.html %}
-
-  {% include prepurchase.html %}
-
-  {% include biography.html %}
-
-  {% include team.html %}
-
-  {% include gallery.html %}
-
-  {% include follow.html %}
-
-  {% include musicplayer.html %}
-
-  {% include footer.html %}
-
-  {% include scripts.html %}
-
+  <script src="assets/scripts/jquery-2.1.4.min.js"></script>
+  <!-- <script src="assets/scripts/scrollreveal.min.js"></script> -->
+  <script src="assets/scripts/scripts.js"></script>
 </body>
 </html>

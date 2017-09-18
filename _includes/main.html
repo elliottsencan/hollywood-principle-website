@@ -1,0 +1,42 @@
+<section class="height-100 imagebg cover cover-1" data-overlay="3">
+  <div class="background-image-holder  background-image-holder-top">
+    <img alt="image" src="https://res.cloudinary.com/dpkpxnpsp/image/upload/v1505715418/HollywoodPrincipleColors-min_irap5d.png">
+  </div>
+  <div class="container pos-vertical-center">
+    <div class="row">
+      <div class="col-sm-6 text-right text-center-xs">
+        <h1 id="colors-copy">Colors.</h1>
+        <!-- <img class="logo" alt="Pillar" src="assets/images/logo-large-light.png"> -->
+      </div>
+      <div class="col-sm-6 text-center-xs">
+        <p class="lead">
+          The new E.P.
+          <br> from Hollywood Principle
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 text-center form-group">
+        <!-- <div class="modal-instance modal-video-1"> -->
+        <button class="btn btn--success" id="presave">
+                                    <span class="btn__text" style="font-size: 16px;">
+                                        <i class="socicon-spotify"></i> &nbsp; Presave to Spotify
+                                    </span>
+                                </button>
+
+        <script type="text/javascript">
+          var a = new XMLHttpRequest;
+          a.open("GET", "https://www.fanpresave.com/api/login/ebf7c070-99cc-11e7-92c5-13966effe53b", !0), a.onload = function() {
+            a.status >= 200 && a.status < 400 && document.getElementById("presave").addEventListener("click", function() {
+              window.open(a.responseText, "presave", "menubar=1,resizable=1,width=512,height=768")
+            })
+          }, a.onerror = function() {}, a.send();
+        </script>
+      </div>
+    </div>
+    <div class="col-sm-12 text-center">
+      <a href="#signup"><small>Dont have Spotify?</small></a>
+    </div>
+    <!-- </div> -->
+  </div>
+</section>
