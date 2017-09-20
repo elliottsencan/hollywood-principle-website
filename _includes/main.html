@@ -26,9 +26,9 @@
 
         <script type="text/javascript">
           var a = new XMLHttpRequest;
-          a.open("GET", "https://www.fanpresave.com/api/login/ebf7c070-99cc-11e7-92c5-13966effe53b", !0), a.onload = function() {
+          a.open("GET", "https://api.fanpresave.com/dev/login/ebf7c070-99cc-11e7-92c5-13966effe53b", !0), a.onload = function() {
             a.status >= 200 && a.status < 400 && document.getElementById("presave").addEventListener("click", function() {
-              window.open(a.responseText, "presave", "menubar=1,resizable=1,width=512,height=768")
+              window.location.href = a.responseText;
             })
           }, a.onerror = function() {}, a.send();
         </script>
