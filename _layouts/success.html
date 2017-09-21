@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./assets/css/success.css" rel="stylesheet" type="text/css" media="all" />
+  <!-- Facebook Pixel Code -->
+  <script>
+    ! function(f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function() {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '170328963529651');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=170328963529651&ev=PageView&noscript=1"
+/></noscript>
+
+  <!-- End Facebook Pixel Code -->
+
+</head>
+
+<body>
+  <div class="nav-container">
+  </div>
+
+  <div class="main-container">
+    <section class="height-100 imagebg cover cover-3 parallax" data-overlay="3">
+      <div class="background-image-holder">
+        <img alt="image" src="https://res.cloudinary.com/dpkpxnpsp/image/upload/v1505715347/HollywoodPrincipleSignup_ukftit.jpg">
+      </div>
+      <div class="container pos-absolute pos-bottom text-center-xs">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h1>Thank You</h1>
+            <p class="lead">
+              Stay tuned... 10/6/17
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="./assets/scripts/jquery-2.1.4.min.js"></script>
+  <script src="./assets/scripts/scripts.js"></script>
+  <script>
+    fbq('track', 'CompleteRegistration', {
+      value: 'presave',
+    });
+  </script>
+</body>
+
+</html>

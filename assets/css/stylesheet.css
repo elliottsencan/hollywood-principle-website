@@ -2117,6 +2117,7 @@ button:active, button:hover, button:focus {
   position: relative;
   top: 5px;
   line-height: 1.45;
+  margin-bottom: 2rem;
 }
 
 .cover-1 .row:first-child:not(:last-child) {

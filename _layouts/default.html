@@ -3,10 +3,44 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Holywood Principle</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:url" content="https://www.hollywoodprinciple.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Colors. The new E.P from Hollywood Principle" />
+  <meta property="og:description" content="Click here to presave to spotify" />
+  <meta property="og:image" content="https://res.cloudinary.com/dpkpxnpsp/image/upload/v1505715418/HollywoodPrincipleColors-min_irap5d.png" />
   <link href="assets/css/stylesheet.css" rel="stylesheet" type="text/css" media="all" />
+  <!-- Facebook Pixel Code -->
+  <script>
+    ! function(f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function() {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '170328963529651');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=170328963529651&ev=PageView&noscript=1"
+/></noscript>
+  <!-- End Facebook Pixel Code -->
+
 </head>
+
 <body>
   <div class="site-bar site-bar-left"></div>
   <div class="site-bar site-bar-right"></div>
@@ -113,15 +147,25 @@
   </div>
 
   <div class="main-container">
-    
-    {% include main.html %}
-    
-    {% include signup.html %}
-    
+
+    {% include main.html %} {% include signup.html %}
+
   </div>
 
   <script src="assets/scripts/jquery-2.1.4.min.js"></script>
-  <!-- <script src="assets/scripts/scrollreveal.min.js"></script> -->
   <script src="assets/scripts/scripts.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-57422058-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments)
+    };
+    gtag('js', new Date());
+
+    gtag('config', 'UA-57422058-1');
+  </script>
+
 </body>
+
 </html>
