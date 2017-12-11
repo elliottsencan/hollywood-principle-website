@@ -16,25 +16,10 @@
     </div>
     <div class="row">
       <div class="col-sm-12 text-center form-group">
-        <!-- <div class="modal-instance modal-video-1"> -->
-        <button class="btn btn--success" id="presave">
-                                    <span class="btn__text" style="font-size: 16px;">
-                                        <i class="socicon-spotify"></i> &nbsp; Presave to Spotify
-                                    </span>
-                                </button>
-
-
-        <script type="text/javascript">
-          var a = new XMLHttpRequest;
-          a.open("GET", "https://api.fanpresave.com/dev/login/e9163850-9dd2-11e7-9296-8d9fe2c85879", !0), a.onload = function() {
-            a.status >= 200 && a.status < 400 && document.getElementById("presave").addEventListener("click", function() {
-              fbq('track', 'Lead', {
-                value: 'presave',
-              });
-              window.location.href = a.responseText;
-            })
-          }, a.onerror = function() {}, a.send();
-        </script>
+        <iframe src="https://open.spotify.com/embed?uri=spotify:album:3WOz8Nsp4qYkvk70fwZEDq" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
+      </div>
+      <div class="col-sm-12 text-center form-group">
+        <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:6ldZGvFDjs6KafLouTBHJ9&size=basic&theme=dark" width="150" height="28" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
       </div>
     </div>
     <div class="col-sm-12 text-center">
